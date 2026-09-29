@@ -1,14 +1,14 @@
 ---
-title: Virtual Lab for Language Intelligence
+title: Amrita SAIL Lab
 design:
   spacing: 6rem
 type: landing
 sections:
   - block: hero
     content:
-        eyebrow: Virtual Research Lab
-        title: "Driving innovation in [Language Intelligence] for Social Good"
-        text: We pioneer research and development in NLP and machine learning to create technologies benefiting society.
+        eyebrow: Applied Research & Innovation Lab
+        title: "Developing [Language Intelligence] for Social Good"
+        text: We apply AI and NLP to real-world societal challenges, with a focus on low-resource and multilingual settings and Indian languages.
         primary_action:
           text: Explore Our Research
           url: "#our-research"
@@ -31,28 +31,24 @@ sections:
             direction: 90
         text_color_light: false
         spacing:
-          padding:
-            - 6rem
-            - 0
-            - 6rem
-            - 0
+          padding: [6rem, 0, 6rem, 0]
   - block: features
     content:
         title: Our Research Focus
-        text: Advancing the state of the art in NLP and Machine Learning with a commitment to ethical and social impact.
+        text: "Societal Problem → Language Data → Research → Intelligent Systems → Applications → Deployment → Impact"
         items:
-          - name: Natural Language Processing
-            description: Develop models that understand and generate human language accurately and fairly.
-            icon: hero/chat-bubble-oval-left
-          - name: Machine Learning Innovation
-            description: Create robust and interpretable machine learning algorithms for practical applications.
-            icon: hero/cpu
-          - name: Social Good Applications
-            description: "Apply AI research to education, healthcare, and other societal challenges."
+          - name: Research
+            description: New methods, datasets, models, and evaluation approaches in NLP, AI, and language intelligence.
+            icon: hero/academic-cap
+          - name: Build
+            description: Turning research into prototypes, platforms, tools, and applications for real-world problems.
+            icon: hero/wrench-screwdriver
+          - name: Impact
+            description: Working with communities and institutions to evaluate and deploy technology for social value.
             icon: hero/heart
-          - name: Collaborative Projects
-            description: Partner with academic and industry leaders to amplify impact.
-            icon: hero/building-library
+          - name: Multilingual & Low-Resource NLP
+            description: Online safety, health information, climate, civic engagement, education, and language accessibility.
+            icon: hero/language
     design:
         background:
           color: white
@@ -61,8 +57,8 @@ sections:
   - block: team-showcase
     content:
         title: "Team & Collaborators"
-        subtitle: Meet our experts and partners
-        text: Diverse experts collaborating to push the boundaries of language intelligence.
+        subtitle: Meet our researchers and partners
+        text: Department of Computer Science & Engineering, School of Computing, Amrita Vishwa Vidyapeetham, Amritapuri Campus.
         user_groups:
           - Principal Investigators
           - Research Engineers
@@ -88,20 +84,20 @@ sections:
   - block: gallery
     content:
         title: Our Projects
-        subtitle: Innovative NLP and ML projects with real-world impact
+        subtitle: Language technologies with real-world impact
         items:
           - src: media/projects/project1.jpg
-            title: Project Alpha
-            caption: Exploring conversation AI for healthcare support.
-            alt: Screenshot of Project Alpha interface
+            title: Project 1
+            caption: Replace with a SAIL project.
+            alt: Project 1 screenshot
           - src: media/projects/project2.jpg
-            title: Project Beta
-            caption: AI-driven educational tools for disadvantaged communities.
-            alt: Screenshot of Project Beta interface
+            title: Project 2
+            caption: Replace with a SAIL project.
+            alt: Project 2 screenshot
           - src: media/projects/project3.jpg
-            title: Project Gamma
-            caption: Machine learning models for sustainable development.
-            alt: Screenshot of Project Gamma interface
+            title: Project 3
+            caption: Replace with a SAIL project.
+            alt: Project 3 screenshot
     design:
         layout: grid
         columns: 3
@@ -125,16 +121,8 @@ sections:
     content:
         title: Get in Touch
         text: "We welcome inquiries, collaborations, and opportunities to advance language intelligence for social good."
-        email: "info@virtuallab.org"
-        phone: +1 (123) 456-7890
-        address: "123 Innovation Drive, Tech City"
-        social:
-          - network: twitter
-            url: "https://twitter.com/virtuallab"
-          - network: linkedin
-            url: "https://linkedin.com/company/virtuallab"
-          - network: github
-            url: "https://github.com/virtuallab"
+        email: "anoopvs@am.amrita.edu"
+        address: "Dept. of CSE, School of Computing, Amrita Vishwa Vidyapeetham, Amritapuri Campus, Kollam, India - 690525"
     design:
         background:
           color: "#ffeaea"
