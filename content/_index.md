@@ -1,93 +1,142 @@
 ---
-title: 'Home'
-date: 2023-10-24
+title: Virtual Lab for Language Intelligence
+design:
+  spacing: 6rem
 type: landing
-
 sections:
   - block: hero
     content:
-      title: Write Docs Fast, Focus on Your Content
-      text: The easy, no-code technical documentation solution your users will love 🎉
-      primary_action:
-        text: Get Started
-        url: https://hugoblox.com/templates/details/docs/
-        icon: rocket-launch
-      secondary_action:
-        text: Read the docs
-        url: /docs/
-      announcement:
-        text: "Announcing the release of version 2."
-        link:
-          text: "Read more"
-          url: "/blog/"
+        eyebrow: Virtual Research Lab
+        title: "Driving innovation in [Language Intelligence] for Social Good"
+        text: We pioneer research and development in NLP and machine learning to create technologies benefiting society.
+        primary_action:
+          text: Explore Our Research
+          url: "#our-research"
+          icon: hero/magnifying-glass
+          style: gradient
+        secondary_action:
+          text: Meet the Team
+          url: "#team-collaborators"
+          icon: hero/users
+          style: ghost
     design:
-      spacing:
-        padding: [0, 0, 0, 0]
-        margin: [0, 0, 0, 0]
-      # For full-screen, add `min-h-screen` below
-      css_class: ""
-      background:
-        color: ""
-        image:
-          # Add your image background to `assets/media/`.
-          filename: ""
-          filters:
-            brightness: 0.5
-  - block: stats
-    content:
-      items:
-        - statistic: "1M+"
-          description: |
-            Websites built  
-            with Hugo Blox
-        - statistic: "10k+"
-          description: |
-            GitHub stars  
-            since 2016
-        - statistic: "3k+"
-          description: |
-            Discord community  
-            for support
-    design:
-      # Section background color (CSS class)
-      css_class: "bg-gray-100 dark:bg-gray-800"
-      # Reduce spacing
-      spacing:
-        padding: ["1rem", 0, "1rem", 0]
+        background:
+          color:
+            light: "#ffffff"
+            dark: "#ffffff"
+          gradient:
+            type: linear
+            start: red-600
+            end: red-400
+            direction: 90
+        text_color_light: false
+        spacing:
+          padding:
+            - 6rem
+            - 0
+            - 6rem
+            - 0
   - block: features
-    id: features
     content:
-      title: Features
-      text: Collaborate, publish, and maintain technical knowledge with an all-in-one documentation site. Used by 100,000+ startups, enterprises, and researchers.
-      items:
-        - name: Optimized SEO
-          icon: magnifying-glass
-          description: Automatic sitemaps, RSS feeds, and rich metadata take the pain out of SEO and syndication.
-        - name: Fast
-          icon: bolt
-          description: Super fast page load with Tailwind CSS and super fast site building with Hugo.
-        - name: Easy
-          icon: sparkles
-          description: One-click deployment to GitHub Pages. Have your new website live within 5 minutes!
-        - name: No-Code
-          icon: code-bracket
-          description: Edit and design your site just using rich text (Markdown) and configurable YAML parameters.
-        - name: Highly Rated
-          icon: star
-          description: Rated 5-stars by the community.
-        - name: Swappable Blocks
-          icon: rectangle-group
-          description: Build your pages with blocks - no coding required!
-  - block: cta-card
-    content:
-      title: "Start Writing with the #1 Effortless Documentation Platform"
-      text: Hugo Blox Docs Theme brings all your technical knowledge together in a single, centralized knowledge base. Easily search and edit it with the tools you use every day!
-      button:
-        text: Get Started
-        url: https://hugoblox.com/templates/details/docs/
+        title: Our Research Focus
+        text: Advancing the state of the art in NLP and Machine Learning with a commitment to ethical and social impact.
+        items:
+          - name: Natural Language Processing
+            description: Develop models that understand and generate human language accurately and fairly.
+            icon: hero/chat-bubble-oval-left
+          - name: Machine Learning Innovation
+            description: Create robust and interpretable machine learning algorithms for practical applications.
+            icon: hero/cpu
+          - name: Social Good Applications
+            description: "Apply AI research to education, healthcare, and other societal challenges."
+            icon: hero/heart
+          - name: Collaborative Projects
+            description: Partner with academic and industry leaders to amplify impact.
+            icon: hero/building-library
     design:
-      card:
-        # Card background color (CSS class)
-        css_class: "bg-primary-700"
-        css_style: ""
+        background:
+          color: white
+        layout: grid
+    id: our-research
+  - block: team-showcase
+    content:
+        title: "Team & Collaborators"
+        subtitle: Meet our experts and partners
+        text: Diverse experts collaborating to push the boundaries of language intelligence.
+        user_groups:
+          - Principal Investigators
+          - Research Engineers
+          - PhD Students
+          - Alumni
+        sort_by: name_family
+        sort_ascending: true
+        cta:
+          text: Join Our Team
+          url: /careers
+          icon: hero/user-plus
+    design:
+        background:
+          color: "#ffeaea"
+        show_role: true
+        show_organizations: true
+        show_interests: false
+        show_social: true
+        max_interests: 3
+        align: center
+        max_columns: 4
+    id: team-collaborators
+  - block: gallery
+    content:
+        title: Our Projects
+        subtitle: Innovative NLP and ML projects with real-world impact
+        items:
+          - src: media/projects/project1.jpg
+            title: Project Alpha
+            caption: Exploring conversation AI for healthcare support.
+            alt: Screenshot of Project Alpha interface
+          - src: media/projects/project2.jpg
+            title: Project Beta
+            caption: AI-driven educational tools for disadvantaged communities.
+            alt: Screenshot of Project Beta interface
+          - src: media/projects/project3.jpg
+            title: Project Gamma
+            caption: Machine learning models for sustainable development.
+            alt: Screenshot of Project Gamma interface
+    design:
+        layout: grid
+        columns: 3
+        gap: md
+        caption_position: below
+    id: projects
+  - block: collection
+    content:
+        title: Publications
+        subtitle: Recent papers and articles
+        text: Browse our latest research outputs and scholarly articles.
+        types:
+          - publication
+        sort_by: date
+        sort_ascending: false
+    design:
+        background:
+          color: white
+    id: publications
+  - block: contact-info
+    content:
+        title: Get in Touch
+        text: "We welcome inquiries, collaborations, and opportunities to advance language intelligence for social good."
+        email: "info@virtuallab.org"
+        phone: +1 (123) 456-7890
+        address: "123 Innovation Drive, Tech City"
+        social:
+          - network: twitter
+            url: "https://twitter.com/virtuallab"
+          - network: linkedin
+            url: "https://linkedin.com/company/virtuallab"
+          - network: github
+            url: "https://github.com/virtuallab"
+    design:
+        background:
+          color: "#ffeaea"
+    id: contact
 ---
