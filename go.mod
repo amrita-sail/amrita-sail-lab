@@ -1,4 +1,4 @@
-module github.com/HugoBlox/theme-documentation
+module github.com/amrita-sail/website
 
 go 1.19
 

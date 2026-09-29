@@ -1,9 +1,9 @@
 {
-  "name": "hugo-blox-documentation-starter",
+  "name": "amrita-sail-website",
   "version": "1.0.0",
   "private": true,
   "packageManager": "pnpm@10.14.0",
-  "description": "Documentation starter template for Hugo Blox with Tailwind CSS v4",
+  "description": "Website of Amrita SAIL Lab",
   "scripts": {
     "dev": "hugo server --disableFastRender",
     "build": "hugo --minify && pnpm run pagefind",

@@ -3,6 +3,3 @@ build:
 deploy:
   # Deployment target: github-pages, netlify, vercel, cloudflare, or none
   host: 'github-pages'
-template:
-  id: "documentation"
-  name: "Documentation"
