@@ -32,27 +32,27 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   theme:
     # Mode: 'light', 'dark', or 'system' (follows OS preference)
-    mode: system
+    mode: light
     # Theme pack: name from data/themes/ or { light: "x", dark: "y" } for mix-and-match
     pack: "default"
     # Optional: Override theme pack colors
     colors:
-      primary: "red" # Tailwind palette name or hex (e.g., "indigo" or "#6366f1")
-      secondary: ""
-      neutral: "" # Affects gray utilities (text-gray-*, bg-gray-*)
+      primary: "#9E1B32" # Tailwind palette name or hex (e.g., "indigo" or "#6366f1")
+      secondary: "#6B0F1F"
+      neutral: "neutral" # Affects gray utilities (text-gray-*, bg-gray-*)
     # Optional: Mode-specific color overrides
     colors_light: {}
     colors_dark: {}
     # Optional: Semantic surface color overrides
     surfaces:
-      background: ""
-      foreground: ""
+      background: "#FFFFFF"
+      foreground: "#1F1B1C"
       header:
-        background: ""
-        foreground: ""
+        background: "#FFFFFF"
+        foreground: "#1F1B1C"
       footer:
-        background: ""
-        foreground: ""
+        background: "#4A0E18"
+        foreground: "#F3E9EB"
 
   # ────────────────────────────────────────────────────────────────────────────
   # TYPOGRAPHY
@@ -68,7 +68,7 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   layout:
     # Border radius: 'none', 'sm', 'md', 'lg', or 'full'
-    radius: "md"
+    radius: "sm"
     # Spacing density: 'compact', 'comfortable', or 'spacious'
     spacing: "spacious"
     # Avatar shape in author profiles
@@ -87,15 +87,14 @@ hugoblox:
     # Menu alignment
     align: center # left | center | right
     # Feature toggles
-    search: true
-    theme_toggle: true
+    search: false
+    theme_toggle: false
     theme_picker: false
     language_switcher: false
     # Call-to-action button
     cta:
       enable: false
       text: ""
-      url: ""
 
   # ────────────────────────────────────────────────────────────────────────────
   # FOOTER
@@ -106,7 +105,28 @@ hugoblox:
     style: minimal # minimal | columns | centered
     language_switcher: false
     # Custom footer text (HTML supported)
-    text: ""
+    text: |
+      <style>
+      :root{--hb-radius:2px;--hb-font-heading:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif}
+      body{font-size:1.0625rem;line-height:1.7}
+      h1,h2,h3,h4{font-family:var(--hb-font-heading);font-weight:600;letter-spacing:-.005em;color:#1F1B1C}
+      h1{font-size:clamp(2.1rem,4.5vw,3.1rem);line-height:1.12}
+      .page-header{border-top:4px solid #9E1B32;border-bottom:1px solid #E4DCDD;box-shadow:none}
+      .navbar-brand{display:flex;align-items:center;gap:.65rem;font-family:var(--hb-font-heading);font-weight:600;font-size:1.2rem;color:#1F1B1C}
+      .navbar-brand svg{height:2.1rem;width:2.1rem;flex:none}
+      .nav-link{font-size:.92rem;font-weight:500;color:#3B3335;border-radius:0;border-bottom:2px solid transparent;padding-bottom:.2rem}
+      .nav-link:hover{color:#9E1B32}
+      .nav-link.active{color:#9E1B32;font-weight:500;border-bottom-color:#9E1B32}
+      .prose{max-width:68ch}
+      .prose a{color:#9E1B32;text-decoration-thickness:1px;text-underline-offset:3px}
+      .prose h2{border-top:1px solid #E4DCDD;padding-top:1.4rem;margin-top:2.8rem}
+      a[class*="bg-primary"]{border-radius:2px}
+      ::selection{background:#9E1B32;color:#fff}
+      :focus-visible{outline:2px solid #9E1B32;outline-offset:2px}
+      footer{margin-top:6rem;padding-top:1rem}
+      .footer-license-icons,[data-hbx=poweredby_cta]{display:none}
+      </style>
+      url: ""
 
   # ────────────────────────────────────────────────────────────────────────────
   # COPYRIGHT
@@ -114,7 +134,7 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   copyright:
     # Copyright notice - supports {year}, {name}, {license} placeholders
-    notice: "© {year} {name}, Amrita Vishwa Vidyapeetham. All rights reserved."
+    notice: "© {year} Amrita SAIL Lab, {name}. All rights reserved."
     license:
       type: cc # cc | custom
       allow_derivatives: false

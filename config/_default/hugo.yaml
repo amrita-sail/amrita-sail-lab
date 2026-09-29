@@ -64,7 +64,7 @@ related:
 security:
   _merge: deep
   exec:
-    allow: ['^(dart-)?sass$', '^go$', '^git$', '^node$', '^postcss$', '^tailwindcss$']
+    allow: ['^(dart-)?sass$', '^go$', '^git$', '^node$', '^npx$', '^postcss$', '^tailwindcss$']
 sitemap:
   _merge: deep
 minify:
